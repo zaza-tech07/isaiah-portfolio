@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>my real portfolio</title>
+    <link rel="icon" href="image/image/Isaiah.jpg">
     <link rel="icon" href="icons/Isaiah.jpg">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
    <style>
    
@@ -29,16 +31,17 @@
    <section class="text">
       <div>
          <img src="image/image/laptop.jpg" width="200px" alt="">
-        <h1>I design website and mobile app of any kind with responsiveness
-          and user friendly in mind, 
-          we deliver in most Professional manner in other to give a
-          perfect and a beautiful design to match your taste
+        <h1>I design responsive, user-friendly websites and mobile apps, delivering professional, polished designs tailored to your taste.
         </h1>
       </div>
      </section>
     <section>
-       <h2>Skills</h2>
+       
     <div class="skills-container">
+      <div>
+        <h2>Skills</h2>
+      </div>
+      
       <div class="skill-card">JavaScript</div>
       <div class="skill-card">TypeScript</div>
       <div class="skill-card">React</div>
@@ -46,7 +49,7 @@
     </div>
     </section>
     <div class="form">
-      <form action="ISAIAH Portfolio.htm">
+      <form action="">
       <label class="radiio-row" for="fname">First Name:</label>
       <input type="text" id="fname" name="name" placeholder="First Name"><br>
        <label for="lname">Last Name:</label>
@@ -58,7 +61,27 @@
       <input type="submit" value="Submit">
     </form>
     </div>
+     <section class="newsletter">
+  <div class="newsletter-container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get updates, tips, and latest news delivered straight to your inbox.</p>
 
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+    <h3>Visitor Count: <span id="visitor-count">0</span></h3>
+
+<script>
+  // Replace 'your-site' with a unique key for your site
+  fetch('https://api.countapi.xyz/hit/your-site/visits')
+    .then(res => res.json())
+    .then(res => {
+      document.getElementById('visitor-count').innerText = res.value;
+    });
+</script>
 
   </body>
 </html>

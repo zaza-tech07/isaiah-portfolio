@@ -13,7 +13,7 @@
       color: white;
       text-decoration: none;
       border: 1px solid white;
-      padding: 15px;
+      padding: 5px;
       border-radius: 4px;
     }
     .nav a:hover {
@@ -38,6 +38,7 @@
        color: white; 
        border-radius: 4px;
        margin-bottom: 50px;
+       cursor: pointer;
       }
       input[type=label] {
         color: lightcoral;
@@ -76,9 +77,101 @@
         width: 150px;
         text-align: center;
         font-family: arial;
+        color: rgb(219, 93, 47);
       }
       .skill-card:hover {
         background-color: rgb(219, 93, 47);
         color: white;
         cursor: pointer;
       }
+      /* Make images scale to screen width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Containers adjust to screen */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Text and headings */
+h1, h2, p {
+  font-size: 1em;
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items vertically */
+  }
+
+  .container {
+    width: 100%; /* Full width on mobile */
+  }
+}
+#visitor-count {
+  color: green;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.newsletter {
+  padding: 30px 10px;
+  background: #0f172a; /* dark professional background */
+  color: #ffffff;
+  text-align: center;
+}
+
+.newsletter-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  width: 280px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #0ea5e9;
+}
+
