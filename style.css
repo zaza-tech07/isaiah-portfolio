@@ -70,6 +70,11 @@
         flex-wrap: wrap;
         
       }
+      .hi {
+        display: flex;
+        justify-content: center;
+        color: rgb(219, 93, 47);
+      }
 
       .skill-card {
         padding: 20px;
@@ -84,7 +89,7 @@
         color: white;
         cursor: pointer;
       }
-      /* Make images scale to screen width */
+      
 img {
   max-width: 100%;
   height: auto;
@@ -112,7 +117,7 @@ h1, h2, p {
   }
 
   .container {
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
   }
 }
 #visitor-count {
