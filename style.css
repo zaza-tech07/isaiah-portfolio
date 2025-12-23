@@ -118,6 +118,7 @@ background-color: gainsboro;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: var(--gap-md);
+  cursor: pointer;
 }
 
 .skill-card {
