@@ -1,82 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>my real portfolio</title>
-    <link rel="icon" href="icons/Isaiah.jpg">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-   <style>
-   
-   </style>
-  </head>
-  <body>
-      <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Skills</a>
-        <a href="#">About</a>
-      </nav>
-  
-    <section class="do">
-       <h1>Isaiah's Professional Portfolio</h1>
-       <h2 style="color: rgba(187, 170, 19, 0.884);">Welcome to my page a place where excelence is the priority</h2>
-      
-      <figure>
-        <img class="img" src="image/image/laptop.jpg" width="200px" alt="isaiah">
-      </figure>
-      <figcaption>I design responsive, user-friendly websites and mobile apps, delivering professional, polished designs tailored to your taste</figcaption>
-    </section>
-   <section class="text">
-      <div>
-         <img src="image/image/Isaiah.jpg" width="200px" alt="">
-        <h1>Isaiah Sunday</h1>
-      </div>
-     </section>
-  <section class="skills-section">
-        <h2 class="skills-title">Skills</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Isaiah Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/image/Isaiah.jpg">
+  <link rel="stylesheet" href="re.css">
+</head>
 
-        <div class="skills-container">
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">TypeScript</div>
-          <div class="skill-card">React</div>
-          <div class="skill-card">Next.js</div>
-        </div>
-      </section>
-    <div class="form">
-      <form action="">
-      <label class="radiio-row" for="fname">First Name:</label>
-      <input type="text" id="fname" name="name" placeholder="First Name"><br>
-       <label for="lname">Last Name:</label>
-      <input type="text" id="lname" name="name" placeholder="Last Name"><br>
-       <label for="email">Email:</label>
-      <input type="text" id="email" name="name"><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="name"><br>
-      <input type="submit" value="Submit">
-    </form>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+   <div class="nav-container">
+      <span class="logo">Isaiah</span>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-     <section class="newsletter">
-  <div class="newsletter-container">
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Get updates, tips, and latest news delivered straight to your inbox.</p>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi, I'm Isaiah</h1>
+      <p>
+        A Frontend Developer crafting modern, responsive
+        and user-friendly web & mobile interfaces.
+      </p>
+    </div>
+
+    <div class="hero-image">
+      <img class="imo" src="image/image/laptop.jpg" alt="Workspace">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="image/image/Isaiah.jpg" alt="Isaiah portrait">
+      </div>
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I design and build clean, professional digital experiences
+          with performance, accessibility, and scalability in mind.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">TypeScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Next.js</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to get updates and insights.</p>
 
     <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-</section>
-    <h3>Visitor Count: <span id="visitor-count">0</span></h3>
+      <input type="email" placeholder="Your email" required>
+      <button class="sub">Subscribe</button>
 
-<script>
-  // Replace 'your-site' with a unique key for your site
-  fetch('https://api.countapi.xyz/hit/your-site/visits')
-    .then(res => res.json())
-    .then(res => {
-      document.getElementById('visitor-count').innerText = res.value;
-    });
-</script>
-
-  </body>
-</html>
