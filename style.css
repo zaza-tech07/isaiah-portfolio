@@ -1,3 +1,5 @@
+
+
 /* RESET */
 * {
   margin: 0;
@@ -54,51 +56,52 @@ body {
   text-decoration: none;
   font-size: 15px;
 }
-
-/* HERO */
+/* HERO → TOP LEFT */
 .hero {
-  max-width: 1100px;
-  margin: auto;
-  padding: var(--gap-lg) 16px;
+  max-width: 500px;
+  margin: 80px 0 0 16px; /* below navbar, left aligned */
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap-lg);
+  grid-template-columns: 1fr;
+  gap: var(--gap-md);
   align-items: center;
 }
+
 
 .hero-text h1 {
   color: var(--primary);
   font-size: 2.2rem;
   margin-bottom: var(--gap-sm);
+  color: #0c2358;
+}
+.hero-image img {
+  width: 200px;        /* increased by 200px */
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-.hero-image img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  justify-self: end;
-}
+
 .hero-image img:hover {
 background-color: gainsboro;
 }
 
-/* ABOUT */
+/* ABOUT → TOP CENTER */
 .about {
-  max-width: 1100px;
-  margin: auto;
-  padding: var(--gap-md) 16px;
+  max-width: 900px;
+  margin: 90px auto 0; /* pushes it below navbar */
+  padding: 24px 16px;
+  text-align: center;
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--gap-md);
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
-.about img {
-  width: 140px;
-  border-radius: 10px;
+.about h2 {
+  color: #0c2358;
+  margin-bottom: 8px;
 }
 
 /* SKILLS */
@@ -141,6 +144,7 @@ background-color: gainsboro;
   max-width: 1100px;
   margin: auto;
   padding: var(--gap-md) 16px;
+
 }
 
 .contact-form {
@@ -166,6 +170,7 @@ background-color: gainsboro;
   color: white;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -190,4 +195,28 @@ background-color: gainsboro;
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+
+/* NEWSLETTER */
+.newsletter {
+  width: 300px;
+  padding: 20px;
+  background-color: #0c2358;
+  color: white;
+  margin: 50px;
+}
+/* SUBSCRIBE BUTTON → BOTTOM*/
+.sub {
+  width: 90px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #db5d2f;
+  color: white;
+  transition: 0.3s;
+  right: 50px;
+}
+.sub:hover {
+  background-color: white;
+  color: #db5d2f;
 }
